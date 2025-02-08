@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>YARDK - Product Details Page</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style01.css" rel="stylesheet">
+    </head>
+
+<body>
+    <body>
+
+    <!-- محتوى صفحة المنتج -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- معرض الصور -->
+                <div class="col-lg-6">
+                    <div class="product-gallery">
+                        <div class="main-img mb-4">
+                            <img src="img/Electrical Appliances/2390471_0.jpg" class="img-fluid rounded-3 shadow" alt="Product Image" id="mainImage">
+                        </div>
+                        <div class="thumbnails d-flex gap-2">
+                            <img src="img/Electrical Appliances/465166231_8692613457497490_1205746583395108330_n.jpg" class="img-thumbnail active" alt="Thumbnail 1" style="width: 80px; cursor: pointer;">
+                            <img src="img/Electrical Appliances/group-of-older-white-refrigerators-sitting-outside-at-a-scrap-yard.jpg" class="img-thumbnail" alt="Thumbnail 2" style="width: 80px; cursor: pointer;">
+                            <img src="img/Electrical Appliances/HSM-195-scaled.jpg" class="img-thumbnail" alt="Thumbnail 3" style="width: 80px; cursor: pointer;">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- تفاصيل المنتج -->
+                <div class="col-lg-6">
+                    <div class="product-details">
+                        <h1 class="mb-3" style="color: #1C343F;">ثلاجة مستعملة - ماركة LG</h1>
+                        
+                        <div class="rating mb-3">
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star text-warning"></i>
+                            <i class="fas fa-star-half-alt text-warning"></i>
+                            <i class="far fa-star text-warning"></i>
+                            <span class="ms-2">(15 تقييم)</span>
+                        </div>
+
+                        <div class="price-box bg-1C343F p-3 rounded-3 mb-4">
+                            <h3 class="text-white mb-0">1800 <span class="fs-6">JD</span></h3>
+                        </div>
+
+                        <div class="product-meta mb-4">
+                            <p><strong>الحالة:</strong> <span class="badge bg-success">مستعمل - جيد</span></p>
+                            <p><strong>الكمية المتاحة:</strong> 30 قطعة</p>
+                            <p><strong>الضمان:</strong> 6 أشهر</p>
+                        </div>
+
+                        <div class="quantity-selector mb-4">
+                            <label class="form-label">الكمية:</label>
+                            <div class="input-group" style="max-width: 150px;">
+                                <button class="btn btn-outline-secondary" type="button" id="decrement">-</button>
+                                <input type="number" class="form-control text-center" value="1" min="1" max="30">
+                                <button class="btn btn-outline-secondary" type="button" id="increment">+</button>
+                            </div>
+                        </div>
+
+                        <div class="cta-buttons d-flex gap-3 flex-wrap">
+                            <button class="btn btn-primary px-5 py-3" style="background-color: #32A12E; border: none;">
+                                <i class="fas fa-cart-plus me-2"></i>إضافة إلى السلة
+                            </button>
+                            <button class="btn btn-outline-secondary px-5 py-3">
+                                <i class="fas fa-heart me-2"></i>إضافة إلى المفضلة
+                            </button>
+                        </div>
+
+                        <!-- المواصفات الفنية -->
+                        <div class="specs mt-5">
+                            <h4 class="mb-4" style="color: #1C343F;">المواصفات الفنية</h4>
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td>السعة</td>
+                                        <td>500 لتر</td>
+                                    </tr>
+                                    <tr>
+                                        <td>الاستهلاك الكهربائي</td>
+                                        <td>A++</td>
+                                    </tr>
+                                    <tr>
+                                        <td>العمر الإفتراضي</td>
+                                        <td>5 سنوات</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- المنتجات ذات الصلة -->
+            <div class="related-products mt-5">
+                <h3 class="mb-4" style="color: #1C343F;">منتجات مشابهة</h3>
+                <div class="row g-4">
+                    <!-- يمكن تكرار هذه البطاقة لكل منتج -->
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="img/Electrical Appliances/954049531564914643.jpg" class="card-img-top" alt="Related Product">
+                            <div class="card-body">
+                                <h5 class="card-title">ثلاجة صغيرة</h5>
+                                <p class="text-secondary">1200 JD</p>
+                                <button class="btn btn-primary w-100" style="background-color: #32A12E; border: none;">عرض التفاصيل</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="img/Electrical Appliances/electricalApplinces01.jpg" class="card-img-top" alt="Related Product">
+                            <div class="card-body">
+                                <h5 class="card-title">ثلاجة صغيرة</h5>
+                                <p class="text-secondary">1200 JD</p>
+                                <button class="btn btn-primary w-100" style="background-color: #32A12E; border: none;">عرض التفاصيل</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <img src="img/Electrical Appliances/465166231_8692613457497490_1205746583395108330_n.jpg" class="card-img-top" alt="Related Product">
+                            <div class="card-body">
+                                <h5 class="card-title">ثلاجة صغيرة</h5>
+                                <p class="text-secondary">1200 JD</p>
+                                <button class="btn btn-primary w-100" style="background-color: #32A12E; border: none;">عرض التفاصيل</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/main01.js"></script>
+
+</body>
+
+</html>
