@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>YARDK - Product Details Page</title>
+    <title>YARDK - Product Details</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -28,10 +28,79 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
-    <link href="css/style01.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        .cdgreen {
+            color: #32A12E !important
+        }
+    </style>
 </head>
 
 <body class="product-body">
+
+
+    <!-- Navbar & Hero Start -->
+    <div class="container-fluid nav-bar p-0">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="display-5 text-secondary m-0"><img src="img/logoIcon-removebg-preview.png" class="img-fluid"
+                        alt="">YARDK</h1>
+                <!-- <img src="img/logo.png" alt="Logo"> -->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-bs-toggle="dropdown"><span
+                                class="dropdown-toggle">Categories</span></a>
+                        <div class="dropdown-menu m-0">
+                            <a href="electrical_appliances.html" class="dropdown-item">Electrical Appliances</a>
+                            <a href="furniture.html" class="dropdown-item">Furniture</a>
+                            <a href="scrap_Surplus.html" class="dropdown-item">Scrap & Surplus</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+                <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3"
+                    data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search"></i></button>
+
+                <button class="btn btn-primary btn-md-square border-secondary mb-3 mb-md-3 mb-lg-0 me-3"
+                    data-bs-toggle="modal">
+                    <i class="fas fa-language"></i>
+                </button>
+                <a href="Regestration.html"
+                    class="btn btn-primary border-secondary rounded-pill py-2 px-4 px-lg-3 mb-3 mb-md-3 mb-lg-0">Login</a>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar & Hero End -->
+
+
+    <!-- Modal Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content rounded-0">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center">
+                    <div class="input-group w-75 mx-auto d-flex">
+                        <input type="search" class="form-control p-3" placeholder="Search Here ..."
+                            aria-describedby="search-icon-1">
+                        <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Search End -->
+
+
+
     <div class="container-fluid py-5">
         <div class="container">
             <div class="row g-5">
@@ -40,33 +109,38 @@
                     <div class="row g-4">
                         <!-- Main Image -->
                         <div class="col-12">
-                            <img src="img/Electrical Appliances/group-of-older-white-refrigerators-sitting-outside-at-a-scrap-yard.jpg" alt="Product" class="img-fluid rounded-3 shadow" id="mainImage">
+                            <img src="img/Electrical Appliances/group-of-older-white-refrigerators-sitting-outside-at-a-scrap-yard.jpg"
+                                alt="Product" class="img-fluid rounded-3 shadow" id="mainImage">
                         </div>
 
                         <!-- Thumbnails -->
                         <div class="col-3">
-                            <img src="img/Electrical Appliances/group-of-older-white-refrigerators-sitting-outside-at-a-scrap-yard.jpg" alt="Thumbnail" class="img-fluid rounded-2 cursor-pointer thumbnail">
+                            <img src="img/Electrical Appliances/group-of-older-white-refrigerators-sitting-outside-at-a-scrap-yard.jpg"
+                                alt="Thumbnail" class="img-fluid rounded-2 cursor-pointer thumbnail">
                         </div>
                         <div class="col-3">
-                            <img src="img/Electrical Appliances/electricalApplinces01.jpg" alt="Thumbnail" class="img-fluid rounded-2 cursor-pointer thumbnail">
+                            <img src="img/Electrical Appliances/electricalApplinces01.jpg" alt="Thumbnail"
+                                class="img-fluid rounded-2 cursor-pointer thumbnail">
                         </div>
                         <div class="col-3">
-                            <img src="img/Electrical Appliances/2390471_0.jpg" alt="Thumbnail" class="img-fluid rounded-2 cursor-pointer thumbnail">
+                            <img src="img/Electrical Appliances/2390471_0.jpg" alt="Thumbnail"
+                                class="img-fluid rounded-2 cursor-pointer thumbnail">
                         </div>
                         <div class="col-3">
-                            <img src="img/Electrical Appliances/72002015-240x180.jpeg" alt="Thumbnail" class="img-fluid rounded-2 cursor-pointer thumbnail">
-                        </div>                        
+                            <img src="img/Electrical Appliances/72002015-240x180.jpeg" alt="Thumbnail"
+                                class="img-fluid rounded-2 cursor-pointer thumbnail">
+                        </div>
                     </div>
                 </div>
 
                 <!-- Right Column - Details -->
-                <div class="col-lg-6 text-white p-5 rounded-3 cdColor">
+                <div class="col-lg-6 text-white p-5 rounded-3 cdColor" style="background-color: #002f5f;">
                     <!-- Product Title -->
-                    <h1 class="productTitle">Used Industrial Refrigerator</h1>
+                    <h1 class="productTitle" style="color: #FE9D01;">Used Industrial Refrigerator</h1>
 
                     <!-- Price -->
                     <div class="d-flex align-items-center mb-4">
-                        <h3 class="text-white me-3">$1,800</h3>
+                        <h3 class="text-white me-3">JD 1,800</h3>
                         <span class="badge bg-success">In Stock</span>
                     </div>
 
@@ -84,13 +158,18 @@
 
                     <!-- Action Buttons -->
                     <div class="d-flex gap-3">
-                        <button class="btn btn-primary px-4 py-2 rounded-pill add-to-cart">
-                            <i class="fas fa-cart-plus me-2"></i>Add to Cart
-                        </button>
 
-                        <button class="btn btn-outline-light px-4 py-2 rounded-pill">
+
+                        <a href="shoppingCart.html" class="btn btn-primary px-4 py-2 rounded-pill add-to-cart">
+                            <i class="fas fa-cart-plus me-2"></i>Add to Cart
+                        </a>
+
+                        <!-- <button href="#" class="btn btn-outline-light px-4 py-2 rounded-pill">
+                            <i ></i>
+                        </button> -->
+                        <a href="#" class="btn btn-outline-light px-4 py-2 rounded-pill">
                             <i class="fas fa-heart me-2"></i>Add to Favorites
-                        </button>
+                        </a>
                     </div>
 
                     <!-- Additional Info -->
@@ -112,6 +191,81 @@
         </div>
     </div>
 
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <img src="img/logo-removebg-preview.png" alt="">
+                    <div class="footer-item">
+                        <div class="position-relative mx-auto rounded-pill">
+                            <input class="form-control border-0 rounded-pill w-100 py-3 ps-4 pe-5" type="text"
+                                placeholder="Search here ...">
+                            <button type="button"
+                                class="btn btn-primary rounded-pill position-absolute top-0 end-0 py-2 mt-2 me-2"><i
+                                    class="fas fa-search"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Our Services</h4>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Home</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Electrical Appliances</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Furniture</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Scrap & Surplus</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> About Us</a>
+                        <a href="#" class=""><i class="fas fa-angle-right me-2"></i> Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Offices Opening Time</h4>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Sun - Thu:</h6>
+                            <p class="text-white mb-0">09.00 am to 07.00 pm</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Satday:</h6>
+                            <p class="text-white mb-0">10.00 am to 05.00 pm</p>
+                        </div>
+                        <div class="mb-3">
+                            <h6 class="text-muted mb-0">Vacation:</h6>
+                            <p class="text-white mb-0">All Friday is our vacation</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-3">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-secondary mb-4">Contact Info</h4>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i>Jordan Amman - Mecca St.</a>
+                        <a href=""><i class="fa fa-map-marker-alt me-2"></i>Syria Damascus - AL Hamra St.</a>
+                        <a href=""><i class="fas fa-envelope me-2"></i> yadrk@info.com</a>
+                        <a href=""><i class="fas fa-phone me-2"></i>+962 797 999-777</a>
+                        <a href=""><i class="fas fa-phone me-2"></i>+963 947 444-777</a>
+                        <div class="d-flex align-items-center">
+                            <i class="fas fa-share fa-2x text-secondary me-2"></i>
+                            <a class="btn mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-instagram"></i></a>
+                            <a class="btn mx-1" href=""><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <span class="text-white copycenter"><a href="#" class="border-bottom text-white"><i
+                            class="fas fa-copyright text-light me-2"></i>YARDK</a>, All right reserved.</span>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/your-fontawesome-kit.js"></script>
     <script src="js/main01.js"></script>

@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping Cart - YARDK</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- CSS File -->
     <link href="css/style01.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Cart Section -->
+    <!-- Cart Section Start -->
     <div class="container-fluid py-5">
         <div class="container">
             <h2 class="mb-5">Your Shopping Cart</h2>
@@ -25,7 +25,8 @@
                     <div class="cart-item p-4 rounded-3 mb-4 shadow-sm" id="item1">
                         <div class="row align-items-center">
                             <div class="col-md-2">
-                                <img src="img/Electrical Appliances/1735568950635078893.jpg" alt="Product" class="img-fluid rounded">
+                                <img src="img/Electrical Appliances/1735568950635078893.jpg" alt="Product"
+                                    class="img-fluid rounded">
                             </div>
                             <div class="col-md-5">
                                 <h4>Used Industrial Refrigerator</h4>
@@ -33,9 +34,11 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="d-flex align-items-center">
-                                    <button class="quantity-btn rounded-start" onclick="updateQuantity('item1', -1)">-</button>
+                                    <button class="quantity-btn rounded-start"
+                                        onclick="updateQuantity('item1', -1)">-</button>
                                     <input type="number" id="item1-qty" class="quantity-input" value="1" min="1">
-                                    <button class="quantity-btn rounded-end" onclick="updateQuantity('item1', 1)">+</button>
+                                    <button class="quantity-btn rounded-end"
+                                        onclick="updateQuantity('item1', 1)">+</button>
                                 </div>
                             </div>
                             <div class="col-md-2 text-end">
@@ -51,7 +54,8 @@
                     <div class="cart-item p-4 rounded-3 mb-4 shadow-sm" id="item2">
                         <div class="row align-items-center">
                             <div class="col-md-2">
-                                <img src="img/scrap/accumulated-wood-waste-furniture-making-1030x539.jpg" alt="Product" class="img-fluid rounded">
+                                <img src="img/scrap/accumulated-wood-waste-furniture-making-1030x539.jpg" alt="Product"
+                                    class="img-fluid rounded">
                             </div>
                             <div class="col-md-5">
                                 <h4>Commercial Microwave</h4>
@@ -59,9 +63,11 @@
                             </div>
                             <div class="col-md-3">
                                 <div class="d-flex align-items-center">
-                                    <button class="quantity-btn rounded-start" onclick="updateQuantity('item2', -1)">-</button>
+                                    <button class="quantity-btn rounded-start"
+                                        onclick="updateQuantity('item2', -1)">-</button>
                                     <input type="number" id="item2-qty" class="quantity-input" value="2" min="1">
-                                    <button class="quantity-btn rounded-end" onclick="updateQuantity('item2', 1)">+</button>
+                                    <button class="quantity-btn rounded-end"
+                                        onclick="updateQuantity('item2', 1)">+</button>
                                 </div>
                             </div>
                             <div class="col-md-2 text-end">
@@ -115,6 +121,8 @@
             </div>
         </div>
     </div>
+    <!-- Cart Section End -->
+
 
     <!-- JavaScript File -->
     <script src="js/main01.js"></script>

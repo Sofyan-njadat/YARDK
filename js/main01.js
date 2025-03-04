@@ -120,9 +120,9 @@ document.querySelector('button[type="submit"]').addEventListener('click', functi
 
 
 /*** Profile ***/
-
+debugger
 // Initialize profile data
-let userProfile = {
+var userProfile = {
     name: "John Doe",
     email: "john.doe@example.com",
     phone: "+962 797 999 777",
@@ -132,7 +132,17 @@ let userProfile = {
 
 // Open Edit Modal
 function openEditModal() {
+    debugger
     // Fill form with current data
+    let userProfile = {
+        name: "John Doe",
+        email: "john.doe@example.com",
+        phone: "+962 797 999 777",
+        accountType: "personal",
+        profileImage: "avatar-placeholder.png"
+    };
+    
+    
     document.getElementById('editName').value = userProfile.name;
     document.getElementById('editEmail').value = userProfile.email;
     document.getElementById('editPhone').value = userProfile.phone;
